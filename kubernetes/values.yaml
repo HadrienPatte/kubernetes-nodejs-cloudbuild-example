@@ -1,0 +1,14 @@
+---
+replicaCount: 1
+
+image:
+  repository: gcr.io/<project_name>/my-app
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: NodePort
+  port: 80
+
+app_port: 3000
+environment: production

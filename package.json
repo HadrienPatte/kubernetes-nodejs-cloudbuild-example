@@ -1,0 +1,19 @@
+{
+  "name": "my_app",
+  "version": "1.0.0",
+  "description": "Example NodeJS app",
+  "main": "server.js",
+  "scripts": {
+    "start": "if [ \"$NODE_ENV\" = \"production\" ]; then npm run start:prod; else npm run start:dev; fi",
+    "start:dev": "nodemon server.js",
+    "start:prod": "node server.js"
+  },
+  "author": "Hadrien Patte",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
